@@ -1,0 +1,1 @@
+This is a basic repo to show all the work I did for the 100 days of python bootcamp by Angela Yu. 
