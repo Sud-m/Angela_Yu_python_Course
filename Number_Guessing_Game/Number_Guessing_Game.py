@@ -21,4 +21,7 @@ while attempts >= 1:
     break
   
   attempts -= 1
-  print("Guess again.")
+  if attempts > 0:
+    print("Guess again.")
+  else:
+    print("You've run out of guesses, you lose!") 
