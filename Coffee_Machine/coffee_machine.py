@@ -64,7 +64,9 @@ def transaction_successful(choice):
     if amount_entered < MENU[choice]["cost"]:
         print("Sorry that's not enough money. Money refunded.")
         return False
-    print(f"Here is ${round(amount_entered - MENU[choice]["cost"], 2)} in change.")
+    change = round(amount_entered - MENU[choice]["cost"], 2)
+    if change > 0:
+        print(f"Here is ${change} in change.")
     return True
 
 
