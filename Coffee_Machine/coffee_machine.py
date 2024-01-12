@@ -1,3 +1,5 @@
+import os
+
 MENU = {
     "espresso": {
         "ingredients": {
@@ -62,12 +64,13 @@ def transaction_successful(choice):
     if amount_entered < MENU[choice]["cost"]:
         print("Sorry that's not enough money. Money refunded.")
         return False
-    print(f"Here is ${amount_entered - MENU[choice]["cost"]} in change.")
+    print(f"Here is ${round(amount_entered - MENU[choice]["cost"], 2)} in change.")
     return True
 
 
 def coffee_machine():
     """Actual coffee machine code"""
+    os.system("cls")
     while True:
         choice = input("What would you like? (espresso ($1.5)/ latte ($2.5)/ cappuccino ($3.0): ")
         if choice not in ["cappuccino", "latte", "espresso", "off", "report"]:
