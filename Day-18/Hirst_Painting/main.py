@@ -13,7 +13,6 @@ timmy = turtle.Turtle()
 screen = turtle.Screen()
 turtle.colormode(255)
 timmy.speed(0)
-timmy.pensize(10)
 timmy.hideturtle()
 colors = [(132, 166, 205), (221, 148, 106), (32, 42, 61), (199, 135, 148), (166, 58, 48), (141, 184, 162),
           (39, 105, 157), (237, 212, 90), (150, 59, 66), (216, 82, 71), (168, 29, 33), (235, 165, 157), (51, 111, 90),
@@ -28,9 +27,7 @@ def hirst_dots():
     for i in range(10):
         timmy_position = timmy.position()
         for j in range(10):
-            timmy.pendown()
             timmy.dot(20, random.choice(colors))
-            timmy.penup()
             timmy.forward(50)
         timmy.setpos(timmy_position[0], timmy_position[1] + 50)
     screen.exitonclick()
