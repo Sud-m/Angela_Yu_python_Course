@@ -28,9 +28,15 @@ alphabet = {
 }
 
 #TODO 2. Create a list of the phonetic code words from a word that the user inputs.
+<<<<<<< HEAD
 while True:
     inp = input('Enter a word: ').upper()
     if inp == "EXIT":
         break
     translation = [alphabet[char] for char in inp]
     print(translation)
+=======
+
+translation = [alphabet[char] for char in input('Enter a word: ').upper()]
+print(translation)
+>>>>>>> c24ec2549fe7a772c015f70647a815e39c8302cb
