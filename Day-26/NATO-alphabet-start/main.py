@@ -38,8 +38,6 @@ while True:
 
 translation = [alphabet[char] for char in input('Enter a word: ').upper()]
 print(translation)
-=======
-=======
 
 translation = [alphabet[char] for char in input('Enter a word: ').upper()]
 print(translation)
