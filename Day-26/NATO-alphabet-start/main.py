@@ -34,3 +34,7 @@ while True:
         break
     translation = [alphabet[char] for char in inp]
     print(translation)
+
+
+translation = [alphabet[char] for char in input('Enter a word: ').upper()]
+print(translation)
