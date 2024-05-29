@@ -33,5 +33,5 @@ while True:
     inp = input('Enter a word: ').upper()
     if inp == "EXIT":
         break
-    translation = [alphabet[char] for char in inp]
+    translation = [' ' if char == ' ' else alphabet[char] for char in inp]
     print(translation)
