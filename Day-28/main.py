@@ -26,11 +26,7 @@ def starttimer():
     shortbreaksec = SHORT_BREAK_MIN * 60
     longbreaksec = LONG_BREAK_MIN * 60
     
-<<<<<<<<< Temporary merge branch 1
-    if REPS %8 == 0:
-=========
     if REPS % 8 == 0:
->>>>>>>>> Temporary merge branch 2
         label.config(text = "Long break", fg = RED, font = (FONT_NAME, 30, "bold"))
         countdown(longbreaksec)
     elif REPS % 2 == 0:
@@ -56,10 +52,6 @@ window = tkinter.Tk()
 window.title("Pommodoro tactic")
 window.config(padx = 100, pady = 50, bg = YELLOW)
 
-<<<<<<<<< Temporary merge branch 1
-
-=========
->>>>>>>>> Temporary merge branch 2
 canvas = tkinter.Canvas(width = 250, height = 250, bg = YELLOW, highlightthickness = 0)
 tomatoimage = tkinter.PhotoImage(file = "Angela_Yu_python_Course_Git/Day-28/tomato.png")
 canvas.create_image(125, 125, image = tomatoimage)
