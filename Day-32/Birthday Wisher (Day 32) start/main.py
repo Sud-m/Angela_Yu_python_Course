@@ -17,7 +17,7 @@ with open(
         ["test", "sudhanvapython@yahoo.com", 2000, 7, 10],
     ]
     writer = csv.writer(birthdates)
-    # writer.writerows(people)
+    writer.writerows(people)
 
 # 2. Check if today matches a birthday in the birthdays.csv
 now = dt.datetime.now()
